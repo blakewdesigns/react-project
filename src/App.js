@@ -1,24 +1,27 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import img from './images/list.png'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <img src={img} alt="img" id="menuIcon"/>
+      <div id="container">
+        <h1 id="listHeader">ToDo List</h1>
+        <div id="divider">
+          <div className="list">
+            <ul className="listItems">
+              <input type="checkbox"></input><li>List example 1</li>
+            </ul>
+            <ul className="listItems">
+              <input type="checkbox"></input><li>List example 2</li>
+            </ul>
+            <ul className="listItems">
+              <input type="checkbox"></input><input type="text" id="textInput" placeholder="Add item"></input>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
