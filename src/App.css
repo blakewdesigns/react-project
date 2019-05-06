@@ -14,7 +14,7 @@
 
 #listHeader {
   max-width: 50%;
-  margin-top: 200px;
+  margin-top: 100px;
   padding-left: 30px;
   margin-bottom: 8px;
 }
@@ -34,24 +34,26 @@
 }
 
 .listItems {
-  max-width: 50%;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: left;
-  align-items: center;
+  align-items: left;
   padding: 0px;
   margin-left: 0px;
 }
 
 #item {
-  padding: 8px 0px;
+  padding: 8px 0px 0px 50px;;
   margin-left: 10px;
+  text-align: left;
 }
 
 #textInput{
+  width: 50%;
   padding: 8px 0px 8px 5px;
-  margin-left: 50px;
+  margin-left: 100px;
   border-radius: 5px;
   border: solid 1px grey;
 }
@@ -65,3 +67,10 @@
   margin: 0px 15px;
 }
 
+#btn {
+  padding: 10px;
+  width: 100px;
+  border-radius: 5px;
+  margin-left: 100px;
+  margin-top: 10px;
+}
