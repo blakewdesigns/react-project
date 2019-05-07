@@ -1,6 +1,8 @@
 import React from 'react';
 import './App.css';
 import img from './images/list.png'
+import Todo from './Todo'
+import Header from './Header'
 
 class App extends React.Component {
 
@@ -40,16 +42,13 @@ render() {
     <div className="App">
       <img src={img} alt="img" id="menuIcon"/>
       <div id="container">
-        <h1 id="listHeader">ToDo List</h1>
+        <Header />
         <div id="divider">
         </div>
         <div className="list">
           <ul className="listItems">
             {this.state.todos.map((todo, index) => (
-              <li key={index} id="item">
-                <input type="checkbox" id="checks" defaultChecked={todo.completed}/>
-                {todo.description}
-            </li>
+              <Todo key={index} todo={todo}/>
             ))
             }
           </ul>
@@ -59,7 +58,6 @@ render() {
             onChange={this.newTodo}
             onKeyDown={(e) => e.key ==='Enter' ? this.addTodo(): ''}></input>
             <button id="btn"
-            onClick={this.addTodo}
             >Add</button>
           </ul>
         </div>
