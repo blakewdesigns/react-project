@@ -9,14 +9,7 @@
 }
 
 #container {
-  text-align: center;
-}
-
-#listHeader {
-  max-width: 50%;
-  margin-top: 100px;
-  padding-left: 30px;
-  margin-bottom: 8px;
+  text-align: left;
 }
 
 #divider {
