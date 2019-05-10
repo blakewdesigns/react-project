@@ -1,17 +1,17 @@
 import React from 'react'
+import styled from 'styled-components'
 
-const headerStyle = {
-  width: '50%',
-  marginTop: '100px',
-  paddingLeft: '30px',
-  marginBottom: '8px'
-}
+const Head = styled.h1`
+  width: 50%;
+  margin-top: 100px;
+  padding-left: 30px;
+  margin-bottom: 8px;
+`
 
 export default function Header() {
   return (
     <header>
-        <h1 style ={headerStyle}>ToDo List</h1>
+        <Head>ToDo List</Head>
     </header>
   )
 }
-
