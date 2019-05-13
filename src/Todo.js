@@ -7,6 +7,7 @@ const List = styled.li`
     margin-left: 60px;
     text-align: left;
     list-style: none;
+    text-decoration: ${props => props.completed ? "line-through" : "none"};
 `
 
 const Checkbox = styled.input`
@@ -16,7 +17,7 @@ const Checkbox = styled.input`
 export default class Todo extends React.Component {
     render() {
         return (
-            <List>
+            <List completed = {this.props.todo.completed}>
                 <Checkbox type="checkbox" defaultChecked={this.props.todo.completed}/>
                 {this.props.todo.description}
             </List>

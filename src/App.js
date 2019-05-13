@@ -66,7 +66,7 @@ class App extends React.Component {
     todos: [
     {
       description: "your description",
-      completed: false
+      completed: true
     },
     {
       description: "your description",
