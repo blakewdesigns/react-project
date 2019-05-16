@@ -24,4 +24,3 @@ export default class Todo extends React.Component {
         )
     }
 }
-
